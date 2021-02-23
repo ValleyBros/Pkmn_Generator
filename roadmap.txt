@@ -1,0 +1,69 @@
+┌─────────────────────────────────────────────────┐
+│                                                 │
+│ mmmmm                    #                      │
+│ #   "#  mmm    mmm    mmm#  mmmmm   mmm   mmmm  │
+│ #mmmm" #" "#  "   #  #" "#  # # #  "   #  #" "# │
+│ #   "m #   #  m"""#  #   #  # # #  m"""#  #   # │
+│ #    " "#m#"  "mm"#  "#m##  # # #  "mm"#  ##m#" │
+│                                           #     │
+│                                           "     │
+└─────────────────────────────────────────────────┘
+
+
+######################################################
+                   PHASES:
+
+              ┌────────────────┐
+              │Layout MVP Specs│
+              └────────────────┘
+                      |                      
+                      V
+             ┌──────────────────┐
+             │Experimental Setup│
+             └──────────────────┘
+                      |
+                      V
+          ┌─────────────────────────┐
+          │Baselines + Vanilla DCGAN│
+          └─────────────────────────┘
+                    |             |
+                    |             V
+                    |     ┌────────────────────────┐
+                    |     │Novel Algorithm Research│
+                    |     └────────────────────────┘
+                    |             |
+                    V             |
+               ┌──────────┐       |
+               │Deployment│<------#
+               └──────────┘
+
+- Layout MVP Specs:
+   Layout High-Level design for our algorithm and what types of features we
+would like to provide to our users in deployment.
+
+- Experimental Setup:
+   Build and test code that will run our experiments including: building,
+training, and evaluating our models. I find working "Agile" works best for
+these types of projects. Basically we start out by "just" trying to get a
+vanilla DCGAN experiment (or baseline experiment) up and running w/o worrying
+about the results of the experiment or fine tuning, etc. Afterwards we work on
+refactoring, and abstracting our builds for our experimental setup.
+
+- Baselines + Vanilla DCGAN:
+   Train and evaluate our baseline models and DCGAN models, look into
+whitepapers on how to optimize DCGAN's for our use case, and implement what we
+find.
+
+- Novel Algorithm Research:
+   Optional. This actually might be pretty fun for us mathbois. Basically 
+we can look into the whitepapers on GAN research and Nash Equilibria
+and see if we can build a novel algorithm that works better for our usecase.
+We can also work on proving bounds or convergence for these algorithms and/or
+the vanilla DCGAN algorithm applied to our specific usecase
+
+- Deployment:
+   Build and deploy our algorithm + final deliverable.
+
+######################################################
+
+
