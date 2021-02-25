@@ -1,0 +1,40 @@
+┌───────────────────────────────────┐
+│                                   │
+│  mmmm                             │
+│ #"   " mmmm    mmm    mmm    mmm  │
+│ "#mmm  #" "#  #"  #  #"  "  #   " │
+│     "# #   #  #""""  #       """m │
+│ "mmm#" ##m#"  "#mm"  "#mm"  "mmm" │
+│        #                          │
+│        "                          │
+└───────────────────────────────────┘
+
+┌────────────┐
+│App Features│
+└────────────┘
+
+MVP Features:
+- Select Random Novel Pokemon
+
+Additional Features:
+- Select Random Novel Pokemon By:
+   - type
+   - egg type
+   - stage in evolutionary tree
+   - color variant
+   - gender variant
+- Select Random Novel Evolutonary Tree
+
+┌─────────┐
+│Toolchain│
+└─────────┘
+
+Code:
+- VCS: Git+Github
+Data Storage:
+- database: file storage (blob data), MySQL (blob meta-data)
+- hardware: ?
+Application:
+- hardware: Google Colab or Local GPU (Training Models), ?
+- language: Python 3
+- frameworks: Tensorflow 2
