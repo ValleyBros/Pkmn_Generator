@@ -25,6 +25,33 @@ Additional Features:
    - gender variant
 - Select Random Novel Evolutonary Tree
 
+┌───────────┐
+│Application│
+└───────────┘
+                 
+#####################################################
+                  Architecture
+
+                 ┌──────────┐    ┌───────────────┐
+    Data-------->│Data Store│    │Web Application│
+      |          └──────────┘    └───────────────┘
+      |               |                 |
+      |              Data            Queries
+      |               |                 |
+      |               V                 V
+┌────────────┐   ┌───────────┐   ┌─────────────┐
+│Data Scraper│   │ML Pipeline│   │Model Service│
+└────────────┘   └───────────┘   └─────────────┘
+      ^               |                 ^
+      |             Model               |
+      V               |                 |
+  ++++++++++          V                 |
+  +Internet+    ┌────────────┐          |
+  ++++++++++    │File Storage│--------Model
+                └────────────┘
+
+#####################################################
+
 ┌─────────┐
 │Toolchain│
 └─────────┘
@@ -34,7 +61,14 @@ Code:
 Data Storage:
 - database: file storage (blob data), MySQL (blob meta-data)
 - hardware: ?
-Application:
+ML Pipeline:
 - hardware: Google Colab or Local GPU (Training Models), ?
 - language: Python 3
 - frameworks: Tensorflow 2
+Model Service:
+- hardware: same as pipeline
+- server: TF Serving
+Data Scraper:
+-
+Web Application:
+-
